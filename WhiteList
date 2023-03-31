@@ -22,7 +22,7 @@ local KeyText = game.CoreGui:FindFirstChild("Login").Drag.MainFrame.Enter
 if done == true then
 
 	warn("INJECTING")
-	game.CoreGui:FindFirstChild("Login").Drag.MainFrame.Visible = false
+	--game.CoreGui:FindFirstChild("Login").Drag.MainFrame.Visible = false
 	game.CoreGui:FindFirstChild("Login").Drag.Success.Visible = true
 	game.CoreGui:FindFirstChild("Login").Drag.Success.TextO.Text = "Loading"
 	wait(0.3)
@@ -32,7 +32,7 @@ if done == true then
 	wait(0.3)
 	game.CoreGui:FindFirstChild("Login").Drag.Success.TextO.Text = "Loading..."
 	wait(0.5)
-	game.CoreGui:FindFirstChild("Login").Drag.Success.TextO.Text = "Success!"
+	game.CoreGui:FindFirstChild("Login").Drag.Success.TextO.Text = "Successfully redeemed the key!"
 	wait(1)
 	game.CoreGui:FindFirstChild("Login").Drag.Success.TextO.Text = "Loading script"
 	wait(0.5)
@@ -41,7 +41,7 @@ if done == true then
 	-- inject script
 else
 
-	game.CoreGui:FindFirstChild("Login").Drag.MainFrame.Visible = false
+	--game.CoreGui:FindFirstChild("Login").Drag.MainFrame.Visible = false
 	game.CoreGui:FindFirstChild("Login").Drag.Success.Visible = true
 	game.CoreGui:FindFirstChild("Login").Drag.Success.TextO.Text = "Loading"
 	wait(0.3)
@@ -53,7 +53,7 @@ else
 	wait(0.5)
 	game.CoreGui:FindFirstChild("Login").Drag.Success.TextO.Text = "Invalid key!"
 	wait(1)
-	game.CoreGui:FindFirstChild("Login").Drag.MainFrame.Visible = true
+	--game.CoreGui:FindFirstChild("Login").Drag.MainFrame.Visible = true
 	game.CoreGui:FindFirstChild("Login").Drag.Success.Visible = false
 
 end
